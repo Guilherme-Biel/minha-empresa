@@ -31,3 +31,15 @@
 .pai-dos-lados {
     display: flex;
 }
+
+.btn:hover {
+    background-color: #444;
+    transition: 0.5s all;
+}
+
+.rodape {
+    background-color: black;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
