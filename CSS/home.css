@@ -3,9 +3,6 @@
     gap: 30px;
     padding-bottom: 30px;
 }
-.pai-dos-lados div {
-    width: 50%;
-}
 
 .pai-dos-lados .lado-direito img {
     width: 100%;
@@ -39,17 +36,40 @@
 
 .Newsletter form input {
     padding: 10px 6px;
-
 }
 
 .btn {
-    width: 200px;
+    width: 250px;
+    text-align: center;
     border: 2px black solid;
     border-radius: 4px;
     padding: 10px 20px;
     background-color: #333;
     color: white;
     box-shadow: #333 3px 3px 0px;
-    cursor: pointer
+    cursor: pointer;
 }
 
+@media screen and (max-width: 733px) {
+    .pai-dos-lados {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .pai-dos-lados .Newsletter {
+        flex-direction: column;
+    }
+}
+    
+@media screen and (max-width: 730px) {
+    .Newsletter form {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .pai-dos-lados div {
+        width: 100%;
+    }
+}
